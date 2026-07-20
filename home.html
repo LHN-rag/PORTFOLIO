@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HS.Portfolio Publishing Home — HTML·CSS 기반 반응형 웹 퍼블리싱 포트폴리오.">
+  <title>Publishing Home | HS.Portfolio</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/subpages.css">
+</head>
+<body class="page-home">
+  <a class="skip-link" href="#main">본문 바로가기</a>
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="logo" href="./index.html">HS<span>.</span>Portfolio</a>
+      <nav class="main-nav" aria-label="주요 메뉴">
+        <ul class="nav-primary">
+          <li class="nav-dropdown">
+            <button type="button" class="nav-dropdown__trigger" aria-expanded="false" aria-haspopup="true" aria-current="true"><span class="nav-dropdown__label">PUBLISHING</span><span class="nav-dropdown__chevron" aria-hidden="true">▾</span></button>
+            <div class="nav-dropdown__panel">
+              <ul class="nav-dropdown__menu nav-dropdown__menu--publishing">
+                <li><a href="./home.html" aria-current="page">Publishing Home</a></li>
+                <li><a href="./profile.html">Profile</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-dropdown">
+            <button type="button" class="nav-dropdown__trigger" aria-expanded="false" aria-haspopup="true"><span class="nav-dropdown__label">DESIGN</span><span class="nav-dropdown__chevron" aria-hidden="true">▾</span></button>
+            <div class="nav-dropdown__panel">
+              <ul class="nav-dropdown__menu nav-dropdown__menu--design">
+                <li><a href="./design.html">Design Home</a></li>
+                <li><a href="./design-figma.html">Figma</a></li>
+                <li><a href="./design-photoshop.html">Photoshop</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <button type="button" class="mobile-nav-toggle" data-mobile-nav-toggle aria-expanded="false" aria-controls="mobile-nav-panel" aria-label="메뉴 열기">
+        <span class="mobile-nav-toggle__line" aria-hidden="true"></span>
+        <span class="mobile-nav-toggle__line" aria-hidden="true"></span>
+        <span class="mobile-nav-toggle__line" aria-hidden="true"></span>
+      </button>
+    </div>
+    <div class="mobile-nav-overlay" data-mobile-nav-overlay hidden aria-hidden="true"></div>
+    <nav class="mobile-nav-panel" id="mobile-nav-panel" data-mobile-nav aria-hidden="true" aria-label="모바일 메뉴" inert>
+      <div class="mobile-nav-panel__header">
+        <a class="mobile-nav-panel__brand logo" href="./index.html">HS<span>.</span>Portfolio</a>
+        <button type="button" class="mobile-nav-close" data-mobile-nav-close aria-label="메뉴 닫기">&times;</button>
+      </div>
+      <div class="mobile-nav-panel__body">
+        <section class="mobile-nav-section" aria-labelledby="mobile-nav-publishing">
+          <h2 class="mobile-nav-section__title" id="mobile-nav-publishing">Publishing</h2>
+          <ul class="mobile-nav-list">
+            <li><a href="./home.html">Publishing Home</a></li>
+            <li><a href="./profile.html">Profile</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </section>
+        <section class="mobile-nav-section" aria-labelledby="mobile-nav-design">
+          <h2 class="mobile-nav-section__title" id="mobile-nav-design">Design</h2>
+          <ul class="mobile-nav-list">
+            <li><a href="./design.html">Design Home</a></li>
+            <li><a href="./design-figma.html">Figma</a></li>
+            <li><a href="./design-photoshop.html">Photoshop</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </section>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="editorial-hero" aria-labelledby="home-hero-title">
+      <p class="editorial-hero-watermark" aria-hidden="true">HS</p>
+      <div class="editorial-hero-inner">
+        <div class="editorial-hero-copy" data-aos="fade-up">
+          <h1 id="home-hero-title" class="editorial-hero-title">PUBLISHING</h1>
+          <p class="editorial-hero-ko">HTML·CSS 기반의 반응형 웹 퍼블리싱 포트폴리오</p>
+        </div>
+        <div class="editorial-hero-visual" data-aos="fade-right" data-aos-delay="100">
+          <figure class="publishing-hero-visual browser-mockup--hero">
+            <div class="publishing-hero-visual__stage" data-hero-tilt>
+              <img class="publishing-hero-visual__desktop" src="./images/publishing-pc-mockup.png" alt="Publishing desktop mockup" width="1600" height="1000">
+              <div class="publishing-hero-visual__mobile-frame">
+                <img class="publishing-hero-visual__mobile" src="./images/publishing-mobile-mockup.png" alt="Publishing mobile mockup" width="420" height="760">
+              </div>
+            </div>
+            <figcaption class="publishing-hero-visual__caption">
+              <span class="publishing-hero-visual__meta" aria-label="Desktop, Mobile, Responsive">
+                <span class="publishing-hero-visual__meta-item">Desktop</span>
+                <span class="publishing-hero-visual__meta-sep" aria-hidden="true"></span>
+                <span class="publishing-hero-visual__meta-item">Mobile</span>
+                <span class="publishing-hero-visual__meta-sep" aria-hidden="true"></span>
+                <span class="publishing-hero-visual__meta-item">Responsive</span>
+              </span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section publishing-simple-nav" aria-labelledby="explore-title">
+      <div class="content-block">
+        <header class="publishing-simple-nav__head" data-aos="fade-up">
+          <p class="publishing-simple-nav__eyebrow">Publishing Index</p>
+          <h2 id="explore-title">포트폴리오 구성</h2>
+          <p class="publishing-simple-nav__sub">소개 · 작업 · 연락 바로가기</p>
+        </header>
+        <nav class="publishing-simple-nav__nav" aria-label="Publishing 탐색">
+          <a class="publishing-simple-nav__item" data-aos="fade-up" href="./profile.html">
+            <span class="publishing-simple-nav__mark" aria-hidden="true">
+              <span class="publishing-simple-nav__index">01</span>
+              <span class="home-icon home-icon--nav">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                  <circle cx="12" cy="8" r="3.25"/>
+                  <path d="M5.5 19.25c1.4-3.1 3.7-4.75 6.5-4.75s5.1 1.65 6.5 4.75"/>
+                </svg>
+              </span>
+            </span>
+            <span class="publishing-simple-nav__body">
+              <span class="publishing-simple-nav__title">Profile</span>
+              <span class="publishing-simple-nav__desc">소개와 방향</span>
+            </span>
+            <span class="publishing-simple-nav__arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="publishing-simple-nav__item" data-aos="fade-up" data-aos-delay="80" href="./projects.html">
+            <span class="publishing-simple-nav__mark" aria-hidden="true">
+              <span class="publishing-simple-nav__index">02</span>
+              <span class="home-icon home-icon--nav">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                  <rect x="3.5" y="4.5" width="17" height="12.5" rx="1.5"/>
+                  <path d="M8 20.5h8M12 17v3.5"/>
+                </svg>
+              </span>
+            </span>
+            <span class="publishing-simple-nav__body">
+              <span class="publishing-simple-nav__title">Projects</span>
+              <span class="publishing-simple-nav__desc">프로젝트</span>
+            </span>
+            <span class="publishing-simple-nav__arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="publishing-simple-nav__item" data-aos="fade-up" data-aos-delay="160" href="./contact.html">
+            <span class="publishing-simple-nav__mark" aria-hidden="true">
+              <span class="publishing-simple-nav__index">03</span>
+              <span class="home-icon home-icon--nav">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                  <rect x="3.5" y="5.5" width="17" height="13" rx="1.5"/>
+                  <path d="M4.5 7.5 12 13l7.5-5.5"/>
+                </svg>
+              </span>
+            </span>
+            <span class="publishing-simple-nav__body">
+              <span class="publishing-simple-nav__title">Contact</span>
+              <span class="publishing-simple-nav__desc">연락처 안내</span>
+            </span>
+            <span class="publishing-simple-nav__arrow" aria-hidden="true">→</span>
+          </a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="content-section home-featured home-featured--showcase" aria-labelledby="featured-title">
+      <div class="content-block">
+        <article class="home-showcase home-showcase--editorial" data-aos="fade-up">
+          <header class="project-case-section__head home-featured__head">
+            <p class="home-featured__eyebrow">
+              <span class="home-icon home-icon--featured" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                  <rect x="3.5" y="4.5" width="17" height="12" rx="1.5"/>
+                  <path d="M8.5 20.5h7M12 16.5v4"/>
+                </svg>
+              </span>
+              <span>Featured Showcase</span>
+            </p>
+            <h2 id="featured-title">대표 작업</h2>
+            <p class="home-featured__lead">반응형 구조와 작업 흐름을<br>한 화면에 정리한 대표 퍼블리싱 작업입니다.</p>
+          </header>
+          <a class="home-showcase__link" href="./project-hs-portfolio.html" aria-label="HS.Portfolio Website 상세 페이지 보기">
+            <div class="home-showcase__stage">
+              <figure class="project-mockup-composition project-mockup-composition--card home-showcase__mockup">
+                <img class="project-mockup-composition__pc" src="./images/project/project-mockup-pc.png" alt="HS.Portfolio Website desktop mockup" width="1200" height="800" loading="lazy">
+                <span class="project-mockup-composition__mobile-frame">
+                  <img class="project-mockup-composition__mobile" src="./images/project/project-mockup-mobile.png" alt="HS.Portfolio Website mobile mockup" width="420" height="760" loading="lazy">
+                </span>
+              </figure>
+            </div>
+            <div class="home-showcase__meta">
+              <div class="home-showcase__copy">
+                <p class="home-showcase__kicker">Featured Project · 2026</p>
+                <h3 class="home-showcase__title">HS.Portfolio Website</h3>
+                <p class="home-showcase__desc">멀티페이지 퍼블리싱 포트폴리오.<br>PC·Mobile 반응형 구조와 작업물 동선을 한곳에 정리했습니다.</p>
+                <ul class="home-showcase__chips" aria-label="작업 특징">
+                  <li>Responsive</li>
+                  <li>HTML/CSS</li>
+                  <li>Portfolio</li>
+                </ul>
+              </div>
+              <span class="home-showcase__cta">상세 보기</span>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="home-dark-highlight home-dark-highlight--split" aria-labelledby="highlight-title">
+      <div class="home-dark-highlight-inner home-dark-highlight-inner--split">
+        <div class="home-approach-copy" data-aos="fade-up">
+          <h2 id="highlight-title">배운 기술을 화면에 옮기고,<br>문제를 고칩니다.</h2>
+          <p class="home-dark-highlight-lead">학습한 기술을 프로젝트에 적용하고,<br>레이아웃과 접근성을 개선합니다.</p>
+          <a class="btn btn-primary" href="./projects.html">프로젝트 보기</a>
+        </div>
+        <ul class="home-approach-points" data-aos="fade-up" data-aos-delay="120">
+          <li>
+            <span class="home-approach-points__num" aria-hidden="true">01</span>
+            <span class="home-icon home-icon--approach" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                <path d="M4.5 7.5h15M4.5 12h10M4.5 16.5h7"/>
+              </svg>
+            </span>
+            <span class="home-approach-points__text">구조를 잡고 화면 흐름을 정리합니다.</span>
+          </li>
+          <li>
+            <span class="home-approach-points__num" aria-hidden="true">02</span>
+            <span class="home-icon home-icon--approach" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                <rect x="6.5" y="4.5" width="11" height="15" rx="1.5"/>
+                <path d="M9.5 8.5h5M9.5 12h5M9.5 15.5h3"/>
+              </svg>
+            </span>
+            <span class="home-approach-points__text">반응형과 접근성 문제를 점검합니다.</span>
+          </li>
+          <li>
+            <span class="home-approach-points__num" aria-hidden="true">03</span>
+            <span class="home-icon home-icon--approach" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                <path d="M5 12.5 9.5 17 19 7.5"/>
+              </svg>
+            </span>
+            <span class="home-approach-points__text">검수 후 완성도를 높여 마무리합니다.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="home-editorial-cta home-editorial-cta--light" aria-labelledby="contact-cta-title">
+      <div class="home-editorial-cta-inner" data-aos="fade-up">
+        <span class="home-editorial-cta__accent" aria-hidden="true"></span>
+        <p class="home-editorial-cta__mark">
+          <span class="home-icon home-icon--cta" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+              <rect x="3.5" y="5.5" width="17" height="13" rx="1.5"/>
+              <path d="M4.5 7.5 12 13l7.5-5.5"/>
+            </svg>
+          </span>
+          <span>Next step</span>
+        </p>
+        <h2 id="contact-cta-title">피드백과 협업 문의를 환영합니다!</h2>
+        <p class="home-editorial-cta-lead">포트폴리오 문의·피드백·협업<br>제안은 Contact에서 안내합니다.</p>
+        <a class="btn btn-primary" href="./contact.html">이동</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 HS.Portfolio · H.S. Hwang</p>
+      <nav class="footer-nav" aria-label="푸터 메뉴">
+        <ul>
+          <li><a href="./index.html">Entry</a></li>
+          <li><a href="./home.html">Publishing</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./design.html">Design</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="footer-top" href="#top">페이지 맨 위로</a>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <script src="./js/interactions.js" defer></script>
+</body>
+</html>

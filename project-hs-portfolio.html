@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HS.Portfolio Website — 2026 Web Publishing 멀티페이지 포트폴리오 프로젝트 케이스 스터디.">
+  <title>HS.Portfolio Website | Projects | HS.Portfolio</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/subpages.css">
+</head>
+<body class="page-project-case">
+  <a class="skip-link" href="#main">본문 바로가기</a>
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="logo" href="./index.html">HS<span>.</span>Portfolio</a>
+      <nav class="main-nav" aria-label="주요 메뉴">
+        <ul class="nav-primary">
+          <li class="nav-dropdown">
+            <button type="button" class="nav-dropdown__trigger" aria-expanded="false" aria-haspopup="true" aria-current="true"><span class="nav-dropdown__label">PUBLISHING</span><span class="nav-dropdown__chevron" aria-hidden="true">▾</span></button>
+            <div class="nav-dropdown__panel">
+              <ul class="nav-dropdown__menu nav-dropdown__menu--publishing">
+                <li><a href="./home.html">Publishing Home</a></li>
+                <li><a href="./profile.html">Profile</a></li>
+                <li><a href="./projects.html" aria-current="page">Projects</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-dropdown">
+            <button type="button" class="nav-dropdown__trigger" aria-expanded="false" aria-haspopup="true"><span class="nav-dropdown__label">DESIGN</span><span class="nav-dropdown__chevron" aria-hidden="true">▾</span></button>
+            <div class="nav-dropdown__panel">
+              <ul class="nav-dropdown__menu nav-dropdown__menu--design">
+                <li><a href="./design.html">Design Home</a></li>
+                <li><a href="./design-figma.html">Figma</a></li>
+                <li><a href="./design-photoshop.html">Photoshop</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <button type="button" class="mobile-nav-toggle" data-mobile-nav-toggle aria-expanded="false" aria-controls="mobile-nav-panel" aria-label="메뉴 열기">
+        <span class="mobile-nav-toggle__line" aria-hidden="true"></span>
+        <span class="mobile-nav-toggle__line" aria-hidden="true"></span>
+        <span class="mobile-nav-toggle__line" aria-hidden="true"></span>
+      </button>
+    </div>
+    <div class="mobile-nav-overlay" data-mobile-nav-overlay hidden aria-hidden="true"></div>
+    <nav class="mobile-nav-panel" id="mobile-nav-panel" data-mobile-nav aria-hidden="true" aria-label="모바일 메뉴" inert>
+      <div class="mobile-nav-panel__header">
+        <a class="mobile-nav-panel__brand logo" href="./index.html">HS<span>.</span>Portfolio</a>
+        <button type="button" class="mobile-nav-close" data-mobile-nav-close aria-label="메뉴 닫기">&times;</button>
+      </div>
+      <div class="mobile-nav-panel__body">
+        <section class="mobile-nav-section" aria-labelledby="mobile-nav-publishing">
+          <h2 class="mobile-nav-section__title" id="mobile-nav-publishing">Publishing</h2>
+          <ul class="mobile-nav-list">
+            <li><a href="./home.html">Publishing Home</a></li>
+            <li><a href="./profile.html">Profile</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </section>
+        <section class="mobile-nav-section" aria-labelledby="mobile-nav-design">
+          <h2 class="mobile-nav-section__title" id="mobile-nav-design">Design</h2>
+          <ul class="mobile-nav-list">
+            <li><a href="./design.html">Design Home</a></li>
+            <li><a href="./design-figma.html">Figma</a></li>
+            <li><a href="./design-photoshop.html">Photoshop</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </section>
+      </div>
+    </nav>
+  </header>
+  <main id="main" class="project-case">
+    <section class="page-hero project-case-hero" aria-labelledby="page-title">
+      <div class="page-hero-inner" data-aos="fade-up">
+        <p class="page-hero-label"><a href="./projects.html">Projects</a> · Case Study</p>
+        <h1 id="page-title">HS.Portfolio Website</h1>
+        <p class="page-hero-lead">HTML/CSS 기반 멀티페이지 포트폴리오.<br>Publishing과 Design을 분리해 보여주는 공개용 구조입니다.</p>
+        <ul class="page-hero-meta" aria-label="프로젝트 메타">
+          <li>Web Publishing</li>
+          <li>Personal</li>
+          <li>2026</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content-section project-case-stage" aria-label="대표 목업">
+      <div class="content-block">
+        <figure class="project-case-frame" data-aos="fade-up">
+          <div class="project-mockup-composition project-mockup-composition--detail">
+            <img class="project-mockup-composition__pc" src="./images/project/project-mockup-pc.png" alt="HS Portfolio website desktop mockup" width="1200" height="800" loading="eager">
+            <span class="project-mockup-composition__mobile-frame">
+              <img class="project-mockup-composition__mobile" src="./images/project/project-mockup-mobile.png" alt="HS Portfolio website mobile mockup" width="420" height="760" loading="eager">
+            </span>
+          </div>
+          <figcaption>Desktop &amp; Mobile · Responsive Publishing</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="content-section project-case-body" aria-label="케이스 스터디">
+      <div class="content-block">
+        <ul class="project-case-meta" aria-label="프로젝트 정보" data-aos="fade">
+          <li><span class="project-case-meta__label">Role</span><span class="project-case-meta__value">구조 설계 · HTML · CSS · 반응형 UI</span></li>
+          <li><span class="project-case-meta__label">Type</span><span class="project-case-meta__value">Personal Portfolio</span></li>
+          <li><span class="project-case-meta__label">Tech</span><span class="project-case-meta__value">HTML · CSS · JavaScript · Responsive</span></li>
+          <li><span class="project-case-meta__label">Focus</span><span class="project-case-meta__value">Structure · Accessibility</span></li>
+        </ul>
+
+        <div class="project-case-sections" data-aos="fade-up">
+          <article class="project-case-section" aria-labelledby="cs-overview">
+            <h2 id="cs-overview">Overview</h2>
+            <p>Entry에서 Publishing / Design 영역을 나누고, Home·Projects·Design Works로 이어지는 멀티페이지 포트폴리오입니다.<br>공개용으로 탐색 가능한 구조로 정리하는 것이 목표였습니다.</p>
+          </article>
+
+          <article class="project-case-section" aria-labelledby="cs-publishing">
+            <h2 id="cs-publishing">Publishing Point</h2>
+            <ul class="project-case-line-list">
+              <li>Entry 분리, Home hero mockup, header dropdown·mobile offcanvas, Projects preview, Design Figma/Photoshop 분리</li>
+              <li>PC·Mobile 목업과 반응형 레이아웃, 접근성 점검을 함께 반영</li>
+              <li>구조 설계, HTML 마크업, CSS 스타일링, 반응형·UI 개선 역할 수행</li>
+              <li>Figma lightbox 등 작업물 탐색 UI 연결</li>
+            </ul>
+          </article>
+
+          <article class="project-case-section" aria-labelledby="cs-result">
+            <h2 id="cs-result">Result</h2>
+            <ul class="project-case-line-list project-case-line-list--compact">
+              <li>공개용 포트폴리오 구조로 정리</li>
+              <li>Publishing / Design 각각 탐색 가능</li>
+              <li>작업물 중심 동선으로 개선</li>
+            </ul>
+          </article>
+        </div>
+
+        <nav class="project-case-nav" aria-label="프로젝트 이동" data-aos="fade-up">
+          <a class="btn btn-primary project-case-nav__back" href="./projects.html">← Projects로 돌아가기</a>
+          <a class="btn btn-secondary project-case-nav__home" href="./home.html">Publishing Home</a>
+        </nav>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 HS.Portfolio · H.S. Hwang</p>
+      <nav class="footer-nav" aria-label="푸터 메뉴">
+        <ul>
+          <li><a href="./index.html">Entry</a></li>
+          <li><a href="./home.html">Publishing</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./design.html">Design</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="footer-top" href="#top">페이지 맨 위로</a>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <script src="./js/interactions.js" defer></script>
+</body>
+</html>

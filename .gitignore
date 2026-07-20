@@ -1,0 +1,34 @@
+# Internal recovery / work notes (do not publish)
+_recovery_notes/
+
+# Sibling or nested report folders if present locally
+recovery_reports/
+
+# Backups and temp
+backup/
+backups/
+*.bak
+*.tmp
+*.swp
+*~
+
+# Logs and test output
+*.log
+test-output/
+tmp/
+temp/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE (personal local settings)
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Python cache (if tooling scripts exist locally)
+__pycache__/
+*.py[cod]
