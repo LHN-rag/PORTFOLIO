@@ -4,7 +4,7 @@ This document defines what belongs in a public GitHub repository and static site
 
 ## Include in public upload
 
-- Root public HTML (18 pages)
+- Root public HTML (20 pages)
 - `css/`
 - `js/`
 - `images/`

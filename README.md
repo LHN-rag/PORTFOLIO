@@ -1,14 +1,14 @@
 # HS.Portfolio
 
-**H.S. Hwang** · Web Publishing & Design Portfolio
+**H.S. Hwang** · Web Publishing, Design & Software Portfolio
 
-HTML, CSS, JavaScript로 제작한 멀티페이지 정적 포트폴리오입니다. Publishing 프로젝트와 Figma·Photoshop Design Works를 Entry에서 구분하고, 반응형 탐색 구조와 접근성 상태를 함께 정리했습니다.
+HTML, CSS, JavaScript로 제작한 멀티페이지 정적 포트폴리오입니다. Publishing, Design, Software Development를 Entry에서 구분하고, 반응형 탐색 구조와 접근성 상태를 함께 정리했습니다.
 
 ## 주요 구조
 
 ### Entry
 
-`index.html`에서 Publishing과 Design 영역으로 진입합니다.
+`index.html`의 3분할 화면에서 Publishing, Design, Software Development로 진입합니다.
 
 ### Publishing Home
 
@@ -50,13 +50,13 @@ HTML, CSS, JavaScript로 제작한 멀티페이지 정적 포트폴리오입니�
 
 `contact.html`은 공개 이메일과 활동 정보를 제공하는 Contact 페이지입니다. Projects / Publishing Home 복귀 동선과 이메일 문의 CTA를 안내합니다.
 
-## 사이트맵 (18)
+## 사이트맵 (20)
 
 ### Entry / Publishing
 
 | 파일 | 역할 |
 |---|---|
-| `index.html` | Publishing / Design Entry |
+| `index.html` | Publishing / Design / Software Entry |
 | `home.html` | Publishing Home |
 | `profile.html` | Introduction, Journey, Focus, Tools, Direction |
 | `projects.html` | HS.Portfolio project showcase |
@@ -83,6 +83,13 @@ HTML, CSS, JavaScript로 제작한 멀티페이지 정적 포트폴리오입니�
 | `design-review-coupon.html` | 리뷰 쿠폰 이벤트 배너 detail |
 | `design-summer-sale.html` | SUMMER SALE detail |
 | `design-pet-banner.html` | 반려동물 소개 배너 detail |
+
+### Software Development
+
+| 파일 | 역할 |
+|---|---|
+| `software.html` | Software Development 소개 |
+| `project-clearvoice.html` | ClearVoice v0.2.5 상세 및 현재 시연 범위 |
 
 ### Legacy
 
@@ -170,3 +177,12 @@ AOS 2.3.1의 CSS와 JavaScript를 CDN에서 불러옵니다.
 - 로고·축약 표기: **HS**
 - 공개 연락은 Contact 페이지에서 안내합니다.
 - 전화번호·상세 주소·비공개 계정 정보는 포함하지 않습니다.
+
+## Software Development 확장
+
+- `index.html`: Publishing / Design / Software 3분할 진입
+- `software.html`: 개발 프로젝트 소개
+- `project-clearvoice.html`: ClearVoice v0.2.5 및 현재 공개·시연 범위
+- `css/software.css`: 신규 화면 전용 스타일
+
+ClearVoice 그래픽은 실제 실행 화면이 아닙니다. 설치본 실행 검증 전이며 Discord 봇과 최신 소스는 현재 공개·시연 범위에 포함하지 않습니다.

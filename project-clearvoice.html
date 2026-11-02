@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ClearVoice v0.2.5 — H.S. Hwang의 소프트웨어 프로젝트 기록.">
+  <title>ClearVoice v0.2.5 | HS.Portfolio</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/subpages.css">
+  <link rel="stylesheet" href="./css/software.css">
+</head>
+<body class="page-clearvoice">
+  <a class="skip-link" href="#main">본문 바로가기</a>
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="logo" href="./index.html">HS<span>.</span>Portfolio</a>
+      <nav class="main-nav" aria-label="주요 메뉴">
+        <ul class="nav-primary">
+          <li class="nav-dropdown">
+            <button type="button" class="nav-dropdown__trigger" aria-expanded="false" aria-haspopup="true"><span class="nav-dropdown__label">PUBLISHING</span><span class="nav-dropdown__chevron" aria-hidden="true">▾</span></button>
+            <div class="nav-dropdown__panel">
+              <ul class="nav-dropdown__menu nav-dropdown__menu--publishing">
+                <li><a href="./home.html">Publishing Home</a></li>
+                <li><a href="./profile.html">Profile</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-dropdown">
+            <button type="button" class="nav-dropdown__trigger" aria-expanded="false" aria-haspopup="true"><span class="nav-dropdown__label">DESIGN</span><span class="nav-dropdown__chevron" aria-hidden="true">▾</span></button>
+            <div class="nav-dropdown__panel">
+              <ul class="nav-dropdown__menu nav-dropdown__menu--design">
+                <li><a href="./design.html">Design Home</a></li>
+                <li><a href="./design-figma.html">Figma</a></li>
+                <li><a href="./design-photoshop.html">Photoshop</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </li>          <li class="nav-dropdown">
+            <button type="button" class="nav-dropdown__trigger" aria-expanded="false" aria-haspopup="true" aria-current="true"><span class="nav-dropdown__label">SOFTWARE</span><span class="nav-dropdown__chevron" aria-hidden="true">▾</span></button>
+            <div class="nav-dropdown__panel"><ul class="nav-dropdown__menu">
+              <li><a href="./software.html">Software Development</a></li>
+              <li><a href="./project-clearvoice.html">ClearVoice v0.2.5</a></li>
+            </ul></div>
+          </li>
+
+        </ul>
+      </nav>
+      <button type="button" class="mobile-nav-toggle" data-mobile-nav-toggle aria-expanded="false" aria-controls="mobile-nav-panel" aria-label="메뉴 열기">
+        <span class="mobile-nav-toggle__line" aria-hidden="true"></span>
+        <span class="mobile-nav-toggle__line" aria-hidden="true"></span>
+        <span class="mobile-nav-toggle__line" aria-hidden="true"></span>
+      </button>
+    </div>
+    <div class="mobile-nav-overlay" data-mobile-nav-overlay hidden aria-hidden="true"></div>
+    <nav class="mobile-nav-panel" id="mobile-nav-panel" data-mobile-nav aria-hidden="true" aria-label="모바일 메뉴" inert>
+      <div class="mobile-nav-panel__header">
+        <a class="mobile-nav-panel__brand logo" href="./index.html">HS<span>.</span>Portfolio</a>
+        <button type="button" class="mobile-nav-close" data-mobile-nav-close aria-label="메뉴 닫기">&times;</button>
+      </div>
+      <div class="mobile-nav-panel__body">
+        <section class="mobile-nav-section" aria-labelledby="mobile-nav-publishing">
+          <h2 class="mobile-nav-section__title" id="mobile-nav-publishing">Publishing</h2>
+          <ul class="mobile-nav-list">
+            <li><a href="./home.html">Publishing Home</a></li>
+            <li><a href="./profile.html">Profile</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </section>
+        <section class="mobile-nav-section" aria-labelledby="mobile-nav-design">
+          <h2 class="mobile-nav-section__title" id="mobile-nav-design">Design</h2>
+          <ul class="mobile-nav-list">
+            <li><a href="./design.html">Design Home</a></li>
+            <li><a href="./design-figma.html">Figma</a></li>
+            <li><a href="./design-photoshop.html">Photoshop</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </section>        <section class="mobile-nav-section" aria-labelledby="mobile-nav-software">
+          <h2 class="mobile-nav-section__title" id="mobile-nav-software">Software</h2>
+          <ul class="mobile-nav-list"><li><a href="./software.html">Software Development</a></li><li><a href="./project-clearvoice.html">ClearVoice v0.2.5</a></li></ul>
+        </section>
+
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+<section class="page-hero"><div class="page-hero-inner"><p class="page-hero-label"><a href="./software.html">Software Development</a> / Project 01</p><h1>ClearVoice <span class="software-title-version">v0.2.5</span></h1><p class="page-hero-lead">청각장애가 있는 지인과의 소통에서 시작한 Windows 실시간 음성 자막 프로젝트.</p></div></section>
+<div class="clearvoice-body">
+<nav class="cv-story-nav" aria-label="ClearVoice 상세 목차"><a href="#cv-origin">개발 계기</a><a href="#cv-challenges">문제와 해결</a><a href="#cv-screens">실제 화면</a><a href="#cv-scope">현재 상태</a></nav>
+<section class="cv-origin" aria-labelledby="cv-origin"><p class="software-eyebrow">01 / WHY CLEARVOICE</p><h2 id="cv-origin">함께 대화하기 위해 시작했습니다.</h2><p class="cv-origin-lead">청각장애가 있는 지인과 소통하기 위해 ClearVoice를 만들기 시작했습니다.</p><p>Discord와 같은 음성 채팅 환경에서 상대방의 말을 자막으로 확인할 수 있도록 돕는 것이 목표였습니다. Windows에서 재생되는 소리를 받아 글자로 바꾸고, 게임이나 다른 프로그램 위에서도 읽을 수 있는 오버레이로 연결했습니다.</p><p>음성 인식 기능을 붙이는 데서 끝나지 않았습니다. 자막이 늦게 도착하는 문제, 다른 PC에서 실행되지 않는 문제, 화면을 조작하기 어려운 문제를 해결하며 실제 사용할 수 있는 앱으로 다듬었습니다.</p>
+<dl class="cv-project-meta"><div><dt>프로젝트</dt><dd>Windows 음성 자막 접근성 앱</dd></div><div><dt>담당 범위</dt><dd>구조·UI/UX 설계, 오디오·STT 통합, 상태 관리, 테스트·패키징</dd></div><div><dt>주요 기술</dt><dd>Electron · React · TypeScript · Python · Faster-Whisper · CUDA</dd></div></dl></section>
+<section class="cv-challenges" aria-labelledby="cv-challenges"><header class="cv-gallery-heading"><p class="software-eyebrow">02 / ENGINEERING JOURNEY</p><h2 id="cv-challenges">실제로 사용할 수 있게 만들기까지</h2><p>개발 당시 작성된 트러블슈팅 기록에서 대표 사례 네 가지를 정리했습니다. 아래 결과는 당시 구현 기록을 기준으로 합니다.</p></header>
+<article class="cv-case"><div class="cv-case-title"><span class="cv-case-number">01</span><h3>실시간 자막의 지연과 자원 부담</h3><p>Whisper.cpp에서 Faster-Whisper로</p></div><dl class="cv-case-body"><div><dt>문제</dt><dd>Whisper.cpp Medium 계열을 게임과 함께 실행할 때 자막 처리 지연과 GPU 부담이 문제가 되었습니다.</dd></div><div><dt>해결</dt><dd>양자화 모델 검토, 무음 구간 건너뛰기, 큐 최적화와 중복 작업 제거를 거친 뒤 Faster-Whisper Medium을 도입했습니다. 기존 자막 처리 흐름은 유지하고 추론 엔진을 교체했습니다.</dd></div><div><dt>결과</dt><dd>개발 기록에서는 실사용 반응성이 개선되어 CUDA float16 기반 Faster-only 배포 구조로 전환했다고 정리합니다. 성능 개선율은 별도 수치로 제시하지 않습니다.</dd></div></dl></article><article class="cv-case"><div class="cv-case-title"><span class="cv-case-number">02</span><h3>개발 PC 밖에서 실행되지 않는 설치본</h3><p>런타임부터 패키징까지 독립적으로</p></div><dl class="cv-case-body"><div><dt>문제</dt><dd>복사한 Python 가상환경이 개발 PC의 경로를 참조했고, 모델·런타임을 포함한 설치 파일이 2GB를 넘으면서 기존 NSIS 패키징도 실패했습니다.</dd></div><div><dt>해결</dt><dd>Windows Embedded Python과 필요한 패키지를 포함하고, 앱 내부에서 Python·모델·worker 경로를 찾도록 구성했습니다. 중복 엔진 구성을 줄이고 7-Zip SFX 기반 단일 EXE로 패키징 방식을 변경했습니다.</dd></div><div><dt>결과</dt><dd>사용자가 Python과 모델을 별도로 설치하지 않도록 오프라인 설치 구조를 마련했습니다. 이는 당시 구현 결과이며, 현재 모든 PC에서의 호환성을 보장하는 의미는 아닙니다.</dd></div></dl></article><article class="cv-case"><div class="cv-case-title"><span class="cv-case-number">03</span><h3>움직일 수 없는 오버레이, 어긋나는 편집 상태</h3><p>보기와 편집의 전환을 하나의 흐름으로</p></div><dl class="cv-case-body"><div><dt>문제</dt><dd>클릭 통과 상태가 편집 모드에도 남아 창을 이동할 수 없었고, 편집을 마친 뒤에도 일부 화면에는 편집 중 상태가 남았습니다.</dd></div><div><dt>해결</dt><dd>편집 진입·종료 처리를 분리해 입력 허용, 이동·크기 조절, 위치 저장, 클릭 통과 복원을 함께 처리했습니다. Electron Main의 실제 창 상태를 기준으로 메인 화면과 오버레이에 변경을 전달했습니다.</dd></div><div><dt>결과</dt><dd>개발 기록상 위치 수정 → 완료 → 다시 위치 수정의 반복 흐름을 안정화했습니다. 화면마다 따로 관리하던 상태를 실제 창 상태에 맞춰 동기화한 사례입니다.</dd></div></dl></article><article class="cv-case"><div class="cv-case-title"><span class="cv-case-number">04</span><h3>끝나지 않는 연결 중 상태</h3><p>성공뿐 아니라 취소와 복구까지</p></div><dl class="cv-case-body"><div><dt>문제</dt><dd>Discord Bridge가 응답하지 않으면 연결 중 상태에서 빠져나오기 어려웠습니다. 취소 후 늦게 도착한 응답이 현재 상태를 바꿀 가능성도 있었습니다.</dd></div><div><dt>해결</dt><dd>연결 시도마다 Attempt ID, AbortController, 20초 제한시간을 적용했습니다. 취소할 때 요청·WebSocket·타이머를 정리하고, 지난 시도의 응답은 현재 상태에 반영하지 않도록 했습니다.</dd></div><div><dt>결과</dt><dd>성공·취소·시간 초과·오류 각각의 복귀 경로와 재연결 흐름을 마련했습니다. 과거 수동 테스트 기록과 현재 Discord 봇 시연 가능 여부는 구분합니다.</dd></div></dl></article>
+<aside class="cv-decisions" aria-labelledby="cv-decisions"><h3 id="cv-decisions">범위를 정하는 것도 개발의 일부였습니다.</h3><p><strong>GPU 감지와 실행 검증을 분리했습니다.</strong> 장치가 보이는 것만으로 동작을 판단하지 않고, 실제 추론 테스트와 런타임 진단을 추가했습니다. GPU 세대 전체의 호환성을 일괄 보장하지 않습니다.</p><p><strong>독점 전체화면 지원은 제한으로 남겼습니다.</strong> Electron 오버레이의 한계를 고려해 창 모드·테두리 없는 전체화면을 중심으로 범위를 정했습니다. Xbox Game Bar 방식은 별도 배포와 구현 복잡도를 고려해 보류했습니다.</p><p><strong>메뉴는 사용자 행동을 기준으로 정리했습니다.</strong> 개발자 중심 메뉴를 홈·오버레이·설정·도움말로 재구성하고, 연결 → 시작 → 중지 흐름과 실제 상태가 드러나도록 개선했습니다.</p></aside></section>
+<section class="cv-gallery-section" aria-labelledby="cv-screens"><header class="cv-gallery-heading"><p class="software-eyebrow">03 / PRODUCT WALKTHROUGH</p><h2 id="cv-screens">실제 화면으로 살펴보기</h2><p>제공된 v0.2.5-external-test 스크린샷입니다. UI와 설정 흐름을 보여주며, 현재 환경에서 연결·음성 인식을 다시 검증한 자료는 아닙니다.</p></header><figure class="cv-screen cv-screen--hero"><button type="button" class="cv-screen-button" data-lightbox-image="./images/clearvoice/ClearVoice_05.png" data-lightbox-caption="메인 화면 · 연결 전 상태" data-lightbox-alt="메인 화면 · 연결 전 상태" aria-label="메인 화면 · 연결 전 상태 확대 보기"><img src="./images/clearvoice/ClearVoice_05.png" alt="메인 화면 · 연결 전 상태" width="960" height="563" loading="eager"><span class="cv-zoom" aria-hidden="true">확대 보기 ↗</span></button><figcaption><strong>메인 화면 · 연결 전 상태</strong><p>연결·자막·오버레이 상태 카드와 즐겨찾기를 모은 홈 화면입니다. 캡처 당시에는 연결 안 됨·자막 중지 상태입니다.</p></figcaption></figure></section>
+
+<section class="cv-gallery-section" aria-labelledby="cv-setup"><header class="cv-gallery-heading"><p class="software-eyebrow">SETUP / FIRST RUN</p><h2 id="cv-setup">처음 실행하는 순간</h2><p>GPU 선택 후 출력 장치를 검색하고 선택하는 초기 설정 흐름입니다. 이미지를 누르면 크게 볼 수 있습니다.</p></header><div class="cv-setup-grid"><figure class="cv-screen"><button type="button" class="cv-screen-button" data-lightbox-image="./images/clearvoice/ClearVoice_01.png" data-lightbox-caption="GPU 선택" data-lightbox-alt="GPU 선택" aria-label="GPU 선택 확대 보기"><img src="./images/clearvoice/ClearVoice_01.png" alt="GPU 선택" width="962" height="559" loading="lazy"><span class="cv-zoom" aria-hidden="true">확대 보기 ↗</span></button><figcaption><strong>GPU 선택</strong><p>감지된 NVIDIA GPU와 드라이버를 표시하는 첫 설정 화면입니다.</p></figcaption></figure><figure class="cv-screen"><button type="button" class="cv-screen-button" data-lightbox-image="./images/clearvoice/ClearVoice_02.png" data-lightbox-caption="출력 장치 검색 중" data-lightbox-alt="출력 장치 검색 중" aria-label="출력 장치 검색 중 확대 보기"><img src="./images/clearvoice/ClearVoice_02.png" alt="출력 장치 검색 중" width="965" height="558" loading="lazy"><span class="cv-zoom" aria-hidden="true">확대 보기 ↗</span></button><figcaption><strong>출력 장치 검색 중</strong><p>장치 검색 상태를 안내하며, 다음 버튼은 비활성화되어 있습니다.</p></figcaption></figure><figure class="cv-screen"><button type="button" class="cv-screen-button" data-lightbox-image="./images/clearvoice/ClearVoice_03.png" data-lightbox-caption="출력 장치 선택 완료" data-lightbox-alt="출력 장치 선택 완료" aria-label="출력 장치 선택 완료 확대 보기"><img src="./images/clearvoice/ClearVoice_03.png" alt="출력 장치 선택 완료" width="961" height="562" loading="lazy"><span class="cv-zoom" aria-hidden="true">확대 보기 ↗</span></button><figcaption><strong>출력 장치 선택 완료</strong><p>검색된 Windows 출력 장치를 선택하고 다음 단계로 이동하는 화면입니다.</p></figcaption></figure></div></section>
+<section class="cv-gallery-section" aria-labelledby="cv-connect"><header class="cv-gallery-heading"><p class="software-eyebrow">PAIRING / CONNECTION</p><h2 id="cv-connect">페어 코드로 연결하기</h2><p>Discord Bridge 연결을 위한 코드 입력 화면입니다. 연결 완료 장면은 포함되어 있지 않습니다.</p></header><figure class="cv-screen"><button type="button" class="cv-screen-button" data-lightbox-image="./images/clearvoice/ClearVoice_06.png" data-lightbox-caption="ClearVoice 연결 창" data-lightbox-alt="ClearVoice 연결 창" aria-label="ClearVoice 연결 창 확대 보기"><img src="./images/clearvoice/ClearVoice_06.png" alt="ClearVoice 연결 창" width="960" height="560" loading="lazy"><span class="cv-zoom" aria-hidden="true">확대 보기 ↗</span></button><figcaption><strong>ClearVoice 연결 창</strong><p>페어 코드 입력과 연결·닫기 버튼으로 구성된 연결 절차입니다.</p></figcaption></figure></section>
+<section class="cv-gallery-section" aria-labelledby="cv-customize"><header class="cv-gallery-heading"><p class="software-eyebrow">OVERLAY / SETTINGS</p><h2 id="cv-customize">자막과 앱 환경 설정</h2><p>오버레이의 모양과 표시 방식, 앱 테마와 자막 언어를 설정하는 화면입니다.</p></header><div class="cv-settings-grid"><figure class="cv-screen"><button type="button" class="cv-screen-button" data-lightbox-image="./images/clearvoice/ClearVoice_07.png" data-lightbox-caption="오버레이 설정 · 미리보기" data-lightbox-alt="오버레이 설정 · 미리보기" aria-label="오버레이 설정 · 미리보기 확대 보기"><img src="./images/clearvoice/ClearVoice_07.png" alt="오버레이 설정 · 미리보기" width="1163" height="839" loading="lazy"><span class="cv-zoom" aria-hidden="true">확대 보기 ↗</span></button><figcaption><strong>오버레이 설정 · 미리보기</strong><p>색상·투명도·창 크기 설정과 자막 미리보기입니다. 표시된 문장은 실제 음성 인식 결과가 아닌 설정용 예시입니다.</p></figcaption></figure><figure class="cv-screen"><button type="button" class="cv-screen-button" data-lightbox-image="./images/clearvoice/ClearVoice_08.png" data-lightbox-caption="앱 설정 · 일반" data-lightbox-alt="앱 설정 · 일반" aria-label="앱 설정 · 일반 확대 보기"><img src="./images/clearvoice/ClearVoice_08.png" alt="앱 설정 · 일반" width="1163" height="840" loading="lazy"><span class="cv-zoom" aria-hidden="true">확대 보기 ↗</span></button><figcaption><strong>앱 설정 · 일반</strong><p>일반·오디오·연결·접근성·고급 메뉴와 다크 테마·한국어 선택 상태입니다.</p></figcaption></figure></div></section><section class="software-story" aria-labelledby="cv-scope"><p class="software-eyebrow">04 / CURRENT STATUS</p><div><h2 id="cv-scope">구현 기록과 현재 시연 범위</h2><p>개발 당시에는 Faster-only 설치 패키징과 외부 테스트를 진행했습니다. 현재는 최종 설치본과 스크린샷을 보유하고 있으며, Discord 봇과 최신 소스에는 접근할 수 없습니다. 당시의 구현 결과를 현재 운영 중인 서비스로 소개하지 않습니다.</p><dl class="software-facts"><div><dt>최종 설치본</dt><dd>v0.2.5 보유 · 현재 환경에서 재검증 전</dd></div><div><dt>실행 화면·기능</dt><dd>제공된 실행 화면 7장 · 연결 및 음성 인식 동작은 미검증</dd></div><div><dt>Discord 봇</dt><dd>현재 시연 불가</dd></div><div><dt>최신 소스</dt><dd>현재 접근 및 공개 불가</dd></div></dl><p class="software-note">현재 공개 가능한 시연 영상이나 다운로드 링크는 제공하지 않습니다.</p></div></section>
+<nav class="software-bottom" aria-label="프로젝트 이동"><a class="btn btn-primary" href="./software.html">← Software Development</a><a href="./contact.html">Contact ↗</a></nav></div></main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 HS.Portfolio · H.S. Hwang</p>
+      <nav class="footer-nav" aria-label="푸터 메뉴">
+        <ul>
+          <li><a href="./index.html">Entry</a></li>
+          <li><a href="./home.html">Publishing</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./design.html">Design</a></li>
+          <li><a href="./software.html">Software</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="footer-top" href="#top">페이지 맨 위로</a>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <script src="./js/interactions.js" defer></script>
+</body>
+</html>
