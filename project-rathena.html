@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="rAthena 오픈소스 커스터마이징 — PHP·MariaDB·웹서버 환경과 서버 기능 수정 경험.">
+  <title>rAthena Server Customization | HS.Portfolio</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/subpages.css">
+  <link rel="stylesheet" href="./css/software.css">
+</head>
+<body class="page-rathena">
+  <a class="skip-link" href="#main">본문 바로가기</a>
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="logo" href="./index.html">HS<span>.</span>Portfolio</a>
+      <nav class="main-nav" aria-label="주요 메뉴">
+        <ul class="nav-primary">
+          <li class="nav-dropdown">
+            <button type="button" class="nav-dropdown__trigger" aria-expanded="false" aria-haspopup="true"><span class="nav-dropdown__label">PUBLISHING</span><span class="nav-dropdown__chevron" aria-hidden="true">▾</span></button>
+            <div class="nav-dropdown__panel">
+              <ul class="nav-dropdown__menu nav-dropdown__menu--publishing">
+                <li><a href="./home.html">Publishing Home</a></li>
+                <li><a href="./profile.html">Profile</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-dropdown">
+            <button type="button" class="nav-dropdown__trigger" aria-expanded="false" aria-haspopup="true"><span class="nav-dropdown__label">DESIGN</span><span class="nav-dropdown__chevron" aria-hidden="true">▾</span></button>
+            <div class="nav-dropdown__panel">
+              <ul class="nav-dropdown__menu nav-dropdown__menu--design">
+                <li><a href="./design.html">Design Home</a></li>
+                <li><a href="./design-figma.html">Figma</a></li>
+                <li><a href="./design-photoshop.html">Photoshop</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </li>          <li class="nav-dropdown">
+            <button type="button" class="nav-dropdown__trigger" aria-expanded="false" aria-haspopup="true" aria-current="true"><span class="nav-dropdown__label">SOFTWARE</span><span class="nav-dropdown__chevron" aria-hidden="true">▾</span></button>
+            <div class="nav-dropdown__panel"><ul class="nav-dropdown__menu">
+              <li><a href="./software.html">Software Development</a></li>
+              <li><a href="./project-clearvoice.html">ClearVoice v0.2.5</a></li>
+            </ul></div>
+          </li>
+
+        </ul>
+      </nav>
+      <button type="button" class="mobile-nav-toggle" data-mobile-nav-toggle aria-expanded="false" aria-controls="mobile-nav-panel" aria-label="메뉴 열기">
+        <span class="mobile-nav-toggle__line" aria-hidden="true"></span>
+        <span class="mobile-nav-toggle__line" aria-hidden="true"></span>
+        <span class="mobile-nav-toggle__line" aria-hidden="true"></span>
+      </button>
+    </div>
+    <div class="mobile-nav-overlay" data-mobile-nav-overlay hidden aria-hidden="true"></div>
+    <nav class="mobile-nav-panel" id="mobile-nav-panel" data-mobile-nav aria-hidden="true" aria-label="모바일 메뉴" inert>
+      <div class="mobile-nav-panel__header">
+        <a class="mobile-nav-panel__brand logo" href="./index.html">HS<span>.</span>Portfolio</a>
+        <button type="button" class="mobile-nav-close" data-mobile-nav-close aria-label="메뉴 닫기">&times;</button>
+      </div>
+      <div class="mobile-nav-panel__body">
+        <section class="mobile-nav-section" aria-labelledby="mobile-nav-publishing">
+          <h2 class="mobile-nav-section__title" id="mobile-nav-publishing">Publishing</h2>
+          <ul class="mobile-nav-list">
+            <li><a href="./home.html">Publishing Home</a></li>
+            <li><a href="./profile.html">Profile</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </section>
+        <section class="mobile-nav-section" aria-labelledby="mobile-nav-design">
+          <h2 class="mobile-nav-section__title" id="mobile-nav-design">Design</h2>
+          <ul class="mobile-nav-list">
+            <li><a href="./design.html">Design Home</a></li>
+            <li><a href="./design-figma.html">Figma</a></li>
+            <li><a href="./design-photoshop.html">Photoshop</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </section>        <section class="mobile-nav-section" aria-labelledby="mobile-nav-software">
+          <h2 class="mobile-nav-section__title" id="mobile-nav-software">Software</h2>
+          <ul class="mobile-nav-list"><li><a href="./software.html">Software Development</a></li><li><a href="./project-clearvoice.html">ClearVoice v0.2.5</a></li></ul>
+        </section>
+
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+<section class="page-hero"><div class="page-hero-inner"><p class="page-hero-label"><a href="./software.html">Software Development</a> / Project 02</p><h1>rAthena Server Customization</h1><p class="page-hero-lead">오픈소스의 구조를 읽고, 웹·데이터베이스·서버를 연결하며 쌓은 개발 및 유지보수 경험.</p></div></section>
+<div class="clearvoice-body">
+<nav class="cv-story-nav" aria-label="rAthena 상세 목차"><a href="#ra-overview">프로젝트 소개</a><a href="#ra-web">웹 · 데이터베이스</a><a href="#ra-server">서버 기능</a><a href="#ra-troubleshooting">문제 분석</a><a href="#ra-process">개발 과정</a></nav>
+<section class="cv-origin" aria-labelledby="ra-overview"><p class="software-eyebrow">01 / PROJECT OVERVIEW</p><h2 id="ra-overview">기존 시스템을 이해하고,<br>필요한 기능을 더하는 작업.</h2><p class="cv-origin-lead">rAthena 오픈소스 게임 서버를 기반으로 기존 시스템을 분석하고 필요한 기능을 추가하거나 수정한 개인 개발 프로젝트입니다.</p><p>GPT를 개발에 활용하기 전부터 rAthena를 다뤄 왔습니다. 이후 기존 경험을 바탕으로 AI 도구를 코드 분석과 수정의 보조 수단으로 활용했습니다.</p><p>서버 실행 환경 구성, MariaDB 데이터 관리, PHP 기반 웹페이지 수정, 게임 콘텐츠 스크립트 작성을 통해 기능 구현과 문제 해결 경험을 쌓았습니다. 서버 엔진 자체를 새로 개발한 것이 아니라, 기존 오픈소스를 활용하고 수정한 작업입니다.</p><dl class="cv-project-meta"><div><dt>분야</dt><dd>Game Server Development &amp; Maintenance</dd></div><div><dt>프로젝트 유형</dt><dd>개인 개발 및 오픈소스 커스터마이징</dd></div><div><dt>담당 범위</dt><dd>환경 구성 · 기존 코드 수정 · 콘텐츠 스크립트 · 오류 조사 및 테스트</dd></div></dl></section>
+<div class="ra-diagram"><span class="software-eyebrow">WEB · DATABASE · SERVER</span><strong>rAthena</strong><span class="ra-diagram-sub">Server Customization</span><div class="ra-stack"><span>PHP<span>회원가입 웹페이지</span></span><span>MariaDB<span>계정 · 게임 데이터</span></span><span>rAthena<span>C++ · 콘텐츠 스크립트</span></span></div><small>작업 영역을 정리한 개념도</small></div><section class="software-story" aria-labelledby="ra-environment"><p class="software-eyebrow">02 / DEVELOPMENT ENVIRONMENT</p><div><h2 id="ra-environment">사용한 환경과 도구</h2><p>기능을 처음부터 모두 작성하기보다 기존 코드의 흐름과 실행 환경을 확인하며 수정하는 데 활용했습니다.</p><dl class="software-facts"><div><dt>서버 환경</dt><dd>Windows에서 rAthena 실행 환경 구성, AutoSet 기반 Apache·PHP·MariaDB 활용</dd></div><div><dt>웹 · 데이터</dt><dd>PHP 회원가입 페이지의 기존 코드 수정, MariaDB 연결 및 계정·게임 데이터 관리</dd></div><div><dt>서버 코드</dt><dd>Visual Studio를 활용한 C++ 기존 소스 분석 및 수정, rAthena Script 콘텐츠 작업</dd></div><div><dt>개발 도구</dt><dd>Cursor·Codex로 코드 분석과 수정 보조, Git으로 변경 이력 관리</dd></div></dl><p class="software-note">위 기술은 이 프로젝트에서 활용한 범위이며, PHP·C++ 전문 개발 경력을 의미하지 않습니다.</p></div></section><section class="software-story" aria-labelledby="ra-web"><p class="software-eyebrow">03 / WEB &amp; DATABASE INTEGRATION</p><div><h2 id="ra-web">웹페이지부터 데이터베이스 연결까지</h2><div class="ra-topic"><h3>PHP 회원가입 페이지 수정</h3><p>서버 회원가입 페이지를 구성하고 기존 HTML·PHP 코드를 읽으며 필요한 부분을 수정했습니다. 화면과 서버 측 처리 코드가 어떻게 연결되는지 확인하는 경험을 쌓았습니다.</p></div><div class="ra-topic"><h3>MariaDB 환경 구성과 데이터 관리</h3><p>서버 데이터베이스를 구성하고 연결 상태를 확인했습니다. 계정·게임 데이터를 관리하면서 데이터베이스 환경과 연결 문제를 점검했습니다.</p></div><div class="ra-topic"><h3>AutoSet 기반 웹서버 활용</h3><p>Apache·PHP·MariaDB 실행 환경을 활용하고 기존 시스템의 환경 및 버전 호환성을 검토했습니다. 별도의 데이터베이스 설계나 PHP 버전 업그레이드 완료 사례로 제시하지 않습니다.</p></div></div></section><section class="software-story" aria-labelledby="ra-server"><p class="software-eyebrow">04 / GAME SERVER DEVELOPMENT</p><div><h2 id="ra-server">콘텐츠 조건과 기존 기능을 수정하는 경험</h2><div class="ra-topic"><h3>rAthena Script 기반 콘텐츠</h3><p>NPC 스크립트와 이벤트 콘텐츠를 작성·수정하고, 인스턴스 던전 및 보스 콘텐츠의 보상·쿨타임 조건을 다루었습니다. 콘텐츠를 서버에 적용하고 동작을 확인하며 조건 처리와 이벤트 흐름을 점검했습니다.</p></div><div class="ra-topic"><h3>C++ 기존 소스 분석 및 수정</h3><p>기존 서버 소스의 구조와 기능을 확인하고 필요한 부분을 수정했습니다. 버전 차이에 따른 호환성을 살펴보며 기능 포팅을 시도했습니다. 포팅 시도 자체를 완료된 기능으로 소개하지 않습니다.</p></div></div></section><section class="cv-challenges" aria-labelledby="ra-troubleshooting"><header class="cv-gallery-heading"><p class="software-eyebrow">05 / TROUBLESHOOTING</p><h2 id="ra-troubleshooting">증상에서 원인 후보를 좁혀가기</h2><p>문제 발생 당시의 조사 경험입니다. 수정 완료나 원인 확정이 확인되지 않은 부분은 구분해 기록했습니다.</p></header>
+<article class="cv-case"><div class="cv-case-title"><span class="cv-case-number">SCRIPT EVENTS</span><h3>몬스터 처치 이벤트의 처리 충돌</h3><p>스크립트 · 이벤트 흐름 분석</p></div><dl class="cv-case-body"><div><dt>증상</dt><dd>여러 스크립트가 몬스터 처치 이벤트를 사용할 때 의도대로 처리되지 않는 문제가 발생했습니다.</dd></div><div><dt>조사</dt><dd>관련 스크립트와 이벤트 처리 구조를 확인하며 충돌 원인을 조사하고 개선 방안을 검토했습니다.</dd></div><div><dt>범위</dt><dd>이벤트 처리 흐름을 분석한 경험으로 소개합니다. 구체적인 수정 완료와 재검증 결과는 확인되지 않아 해결 완료로 단정하지 않습니다.</dd></div></dl></article>
+</section>
+<section class="software-story" aria-labelledby="ra-process"><p class="software-eyebrow">06 / DEVELOPMENT PROCESS</p><div><h2 id="ra-process">기존 rAthena 경험에 AI 도구를 더하며</h2><p>rAthena 작업은 GPT 활용 이전부터 이어져 왔습니다. 이후에는 Cursor와 Codex를 코드 분석·수정의 보조 도구로 활용하며, 제안된 코드를 실제 환경에 적용하고 오류를 확인하는 과정을 반복했습니다. 아래는 AI 도구를 도입한 이후의 작업 흐름입니다.</p><ol class="ra-process"><li><strong>요구사항 정리</strong><span>필요한 기능과 동작 조건 정리</span></li><li><strong>기존 구조 분석</strong><span>관련 코드와 이벤트 흐름 확인</span></li><li><strong>AI 보조 수정</strong><span>Cursor·Codex와 수정안 검토 및 적용</span></li><li><strong>테스트와 반복</strong><span>테스트 서버 적용 → 오류 확인 → 수정 → 동작 검증</span></li></ol></div></section><section class="software-story" aria-labelledby="ra-result"><p class="software-eyebrow">07 / RESULT &amp; EXPERIENCE</p><div><h2 id="ra-result">개발과 운영 환경을 함께 바라보게 되었습니다.</h2><p>기존 오픈소스 구조를 읽고 필요한 부분을 수정하면서, 기능 코드뿐 아니라 웹서버·데이터베이스·실행 환경까지 함께 확인하는 경험을 쌓았습니다.</p><p>PHP 웹페이지 수정, MariaDB 활용, 콘텐츠 스크립트 작성과 반복 테스트를 통해 기존 소프트웨어를 이해하고 유지보수하는 과정을 경험했습니다.</p><p class="software-note">기업 실무 경력이 아닌 개인 개발 프로젝트입니다. 이 페이지는 작업 경험을 정리한 소개이며, 현재 운영 중인 서비스나 실시간 시연을 제공하지 않습니다.</p></div></section><nav class="software-bottom" aria-label="프로젝트 이동"><a class="btn btn-primary" href="./software.html">← Software Development</a><a href="./project-clearvoice.html">ClearVoice ↗</a><a href="./contact.html">Contact ↗</a></nav></div></main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 HS.Portfolio · H.S. Hwang</p>
+      <nav class="footer-nav" aria-label="푸터 메뉴">
+        <ul>
+          <li><a href="./index.html">Entry</a></li>
+          <li><a href="./home.html">Publishing</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./design.html">Design</a></li>
+          <li><a href="./software.html">Software</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="footer-top" href="#top">페이지 맨 위로</a>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <script src="./js/interactions.js" defer></script>
+</body>
+</html>
